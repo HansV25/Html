@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>formularios</h1>
+    <form action="#" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" required placeholder="Nombre Apellido" name="nombre" id="nombre">
+        <br>
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" min="0" max="20" step="5" id="edad">
+        <br>
+        <label for="contraseña">contraseña</label>
+        <input type="password" name="contraseña" id="contraseña">
+        <br>
+        <label for="correo">Correo Electronico</label>
+        <input type="email" required name="correo" id="correo">
+        <br>
+        <label for="pais">País</label>
+        <select required name="pais" id="pais">
+            <option value="">[Seleccione un país]</option>
+            <optgroup label='America'>
+                <option value="1">Chile</option>
+                <option value="2">Colombia</option>
+                <option value="3">USA</option>
+                <option value="4">Mexico</option>
+                <option value="5">Perukistan</option>
+            </optgroup>
+            <optgroup label="Europa">
+                <option value="6">Rusia</option>
+                <option value="7">Francia</option>
+                <option value="8">Rep. Checa</option>
+            </optgroup>
+        </select>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <a href="index.html">Volver</a>
+</body>
+</html>
